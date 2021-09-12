@@ -1,0 +1,7 @@
+powershell
+
+cd C:\Work\Unity\ActiveProjects\Websocket Test\Assets\Resources
+
+get-childitem *.png | foreach { rename-item $_ $_.Name.Replace("-bot-2020-1024x683-removebg-preview", "") }
+
+get-childitem *.png | foreach { rename-item $_ $_.Name.Replace("-", " ") }
