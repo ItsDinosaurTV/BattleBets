@@ -1,7 +1,7 @@
 powershell
 
-cd C:\Work\Unity\ActiveProjects\Websocket Test\Assets\Resources
+cd "C:\Work\Unity\ActiveProjects\Websocket Test\Assets\StreamingAssets\Season\2021"
 
-get-childitem *.png | foreach { rename-item $_ $_.Name.Replace("-bot-2020-1024x683-removebg-preview", "") }
+get-childitem *.png | foreach { rename-item $_ $_.Name.Replace("-bot-2021-removebg-preview", "") }
 
 get-childitem *.png | foreach { rename-item $_ $_.Name.Replace("-", " ") }
